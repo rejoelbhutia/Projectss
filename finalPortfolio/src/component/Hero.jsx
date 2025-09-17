@@ -8,8 +8,9 @@ export default function Hero() {
         let links = document.createElement('a');
         links.href = '../assets/Fake-Resume.pdf'
         links.download = "Resume.pdf";
+          links.click();
         document.appendChild(links);
-         links.click();
+         links.removeChild(links)
         
     }
   return ( <>
