@@ -1,19 +1,31 @@
 // HamburgerMenu.jsx
 export default function HamburgerMenu() {
   return (
-    <ul className='flex flex-col space-y-4 bg-white p-4 rounded-md shadow-lg text-2xl'>
-      <li className='hover:border-b hover:text-gray-500'>
-        <a href="#about">About</a>
-      </li>
-      <li className='hover:border-b hover:text-gray-500'>
-        <a href="#experience">Experience</a>
-      </li>
-      <li className='hover:border-b hover:text-gray-500'>
-        <a href="#project">Projects</a>
-      </li>
-      <li className='hover:border-b hover:text-gray-500'>
-        <a href="#contact">Contact</a>
-      </li>
-    </ul>
+              <ul className=' flex space-x-8 text-2xl '>
+                    <li className=' hover:border-b hover:text-gray-500'>
+                      <Link  to="about"
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                  >About</Link>
+                    </li>
+                    <li className='  hover:border-b hover:text-gray-500'><Link  to="experience"
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                  >Experience</Link></li>
+                    <li className=' hover:border-b hover:text-gray-500'>
+                      <Link  to="project"
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                  >Project</Link>
+                    </li>
+                    <li className=' hover:border-b hover:text-gray-500'><Link  to="contact"
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                  >Contact</Link></li>
+                </ul>
   );
 }

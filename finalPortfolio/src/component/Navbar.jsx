@@ -1,4 +1,4 @@
-
+import {Link} from 'react-scroll'
 import NavSmallScreen from '../component/NavSmallScreen'
 
 export default function Navbar() {
@@ -8,10 +8,30 @@ export default function Navbar() {
         <div className="nav-logo text-4xl">Rejoel</div>
         <div className="links">
             <ul className=' flex space-x-8 text-2xl '>
-                <li className=' hover:border-b hover:text-gray-500'><a href="#about">About</a></li>
-                <li><a href="#experience" className=' hover:border-b hover:text-gray-500'>Experience</a></li>
-                <li><a href="#project" className=' hover:border-b hover:text-gray-500'>Projects</a></li>
-                <li><a href="#contact" className=' hover:border-b hover:text-gray-500'>Contact</a></li>
+                <li className=' hover:border-b hover:text-gray-500'>
+                  <Link  to="about"
+                smooth={true}
+                duration={500}
+                offset={-70}
+              >About</Link>
+                </li>
+                <li className='  hover:border-b hover:text-gray-500'><Link  to="experience"
+                smooth={true}
+                duration={500}
+                offset={-70}
+              >Experience</Link></li>
+                <li className=' hover:border-b hover:text-gray-500'>
+                  <Link  to="project"
+                smooth={true}
+                duration={500}
+                offset={-70}
+              >Project</Link>
+                </li>
+                <li className=' hover:border-b hover:text-gray-500'><Link  to="contact"
+                smooth={true}
+                duration={500}
+                offset={-70}
+              >Contact</Link></li>
             </ul>
         </div>
     </nav>
