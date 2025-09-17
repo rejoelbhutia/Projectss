@@ -1,7 +1,7 @@
 // HamburgerMenu.jsx
 export default function HamburgerMenu() {
   return (
-              <ul className=' flex space-x-8 text-2xl '>
+              <ul className=' flex flex-col space-y-8 text-2xl '>
                     <li className=' hover:border-b hover:text-gray-500'>
                       <a href="#about"
                   

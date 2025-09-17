@@ -17,7 +17,7 @@ export default function NavSmallScreen() {
       </div>
 
       {viewHamLinks && (
-        <div className="absolute top-[100%] right-4 z-50">
+        <div className=" absolute top-[100%] right-4 z-50">
           <HamburgerMenu />
         </div>
       )}
